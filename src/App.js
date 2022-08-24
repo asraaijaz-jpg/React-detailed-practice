@@ -50,7 +50,7 @@ import Flexbox from './Component/Flexbox';
 //////////////////////////////////////this is for only usereducer along with usecontext////////////////
 
 // const initialvalue=0;
-//  export const contextusing=React.createContext();
+  export const contextusing=React.createContext();
 
 //   const reducer=(state,action)=>{
 //   switch(action)
