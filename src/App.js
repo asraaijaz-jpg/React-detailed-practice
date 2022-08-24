@@ -103,19 +103,19 @@ function App() {
   <ContextA/>
 </Provider> */}
 
-    {/* <h1>Hello world</h1>
-    Props are immutable
-    <Funcmp propname='Asra'>
+    {/* <h1>Hello world</h1> */}
+    {/* Props are immutable */}
+    {/* <Funcmp propname='Asra'>
       <p>children 1</p>
       <p>children 2</p>
-    </Funcmp>
-    <Funcmp propname='Furqan'/>
-    <Classcmp propname='Sadia'/>
-    <JSX/>
-    <Statehandling/>
-    <Counter/>
-    <Parent/>
-    <Conditionalrendering/> */}
+    </Funcmp> */}
+    {/* <Funcmp propname='Furqan'/> */}
+    {/* <Classcmp propname='Sadia'/> */}
+    {/* <JSX/> */}
+    {/* <Statehandling/> */}
+    {/* <Counter/> */}
+    {/* <Parent/> */}
+    {/* <Conditionalrendering/> */}
     {/* <Mapfunction/> */}
     {/* <Styling condiononapplycss={true}/> */}
     {/* <Form/> */}
@@ -138,8 +138,9 @@ function App() {
     </Errorhandling>
     */}
     
-    {/* <ClickcounterHOC remainingprops={(isLogged)=>'use spread operator in HOC to pass remianing props'}/>
-    <HovercounterHOC remainingprops={(isLogged)=>isLogged?'use spread operator in HOC to pass remianing props':'No'}/> */}
+    <ClickcounterHOC remainingprops={(isLogged)=>'use spread operator in HOC to pass remianing props'}/>
+    {/* <HovercounterHOC remainingprops={(isLogged)=>isLogged?'use spread operator in HOC to pass remianing props':'No'}/> */}
+
 
     {/* <Renderprops>
       {(count,counter)=>{<ClickcounterRenderprops count={count} counter={counter}/>}}

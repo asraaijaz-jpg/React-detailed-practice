@@ -8,7 +8,7 @@ export class ClickcounterHOC extends Component {
       const {count,counter,name}=this.props
     return (
       <div>
-          <h3>Click counter HOC</h3>
+      <h3>Click counter HOC</h3>
       <button onClick={counter}>{name} Clicked {count} times</button>
       <p>{this.props.remainingprops()}</p>
       </div>
