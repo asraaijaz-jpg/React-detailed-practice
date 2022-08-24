@@ -50,7 +50,7 @@ import Flexbox from './Component/Flexbox';
 //////////////////////////////////////this is for only usereducer along with usecontext////////////////
 
 // const initialvalue=0;
- export const contextusing=React.createContext();
+//  export const contextusing=React.createContext();
 
 //   const reducer=(state,action)=>{
 //   switch(action)
@@ -85,7 +85,7 @@ function App() {
 {/* //////////////////////////////////////this is for only usereducer along with usecontext//////////////// */}
 
 
-  <Flexbox/>
+  {/* <Flexbox/> */}
     {/* <Mediaquery/> */}
        {/* <Make_mul_comp_Pass_data_through_props/> */}
       {/* <Call_API_using_useReducer_and_useEffect/> */}
