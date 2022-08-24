@@ -4,7 +4,8 @@ import HOC from './HOC';
 
 export class ClickcounterHOC extends Component {
   
-  render() {
+  render() 
+  {
       const {count,counter,name}=this.props
     return (
       <div>

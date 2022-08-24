@@ -49,22 +49,22 @@ import Flexbox from './Component/Flexbox';
 
 //////////////////////////////////////this is for only usereducer along with usecontext////////////////
 
-// const initialvalue=0;
+//  const initialvalue=0;
   export const contextusing=React.createContext();
 
-//   const reducer=(state,action)=>{
-//   switch(action)
-//   {
-//     case 'increment':
-//       return state+1;
-//     case 'decrement':
-//       return state-1;
-//     case 'reset':
-//       return initialvalue;
-//     default:
-//       return state;
-//   }
-//   }
+  // const reducer=(state,action)=>{
+  // switch(action)
+  // {
+  //   case 'increment':
+  //     return state+1;
+  //   case 'decrement':
+  //     return state-1;
+  //   case 'reset':
+  //     return initialvalue;
+  //   default:
+  //     return state;
+  // }
+  // }
 
 function App() {
  
@@ -138,15 +138,15 @@ function App() {
     </Errorhandling>
     */}
     
-    <ClickcounterHOC remainingprops={(isLogged)=>'use spread operator in HOC to pass remianing props'}/>
+    {/* <ClickcounterHOC remainingprops={(isLogged)=>'use spread operator in HOC to pass remianing props'}/> */}
     {/* <HovercounterHOC remainingprops={(isLogged)=>isLogged?'use spread operator in HOC to pass remianing props':'No'}/> */}
 
 
     {/* <Renderprops>
       {(count,counter)=>{<ClickcounterRenderprops count={count} counter={counter}/>}}
     </Renderprops>
-    <Renderprops render={(count,counter)=>{<HovercounterRenderprops count={count} counter={counter}/>}}/>
-     */}
+    <Renderprops render={(count,counter)=>{<HovercounterRenderprops count={count} counter={counter}/>}}/> */}
+    
 
 
     </div>
