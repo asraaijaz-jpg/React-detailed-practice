@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Funcmp from './Component/Funcmp';
 import Classcmp from './Component/Classcmp';
 import JSX from './Component/JSX';
@@ -44,35 +45,40 @@ import Call_API_using_useReducer_and_useEffect from './Component/Call_API_using_
 import Make_mul_comp_Pass_data_through_props from './Component/Make_mul_comp_Pass_data_through_props';
 import Mediaquery from './Component/Mediaquery';
 import Flexbox from './Component/Flexbox';
+import Insert_Show_Search_movie_details from './Component/Insert_Show_Search_movie_details';
+import Dynamically_insertion_value_in_object_in_usestate from './Component/dynamically_insertion_value_in_object_in_usestate';
+import Using_Usestate_in_all_ways from './Component/Using_Usestate_in_all_ways';
+import Mouse_focused from './Component/Focused_on_Mouse';
+import Done_OR_NotDone_in_listing from './Component/Done_OR_NotDone_in_listing';
 
 
 
 //////////////////////////////////////this is for only usereducer along with usecontext////////////////
 
-//  const initialvalue=0;
+ const initialvalue=0;
   export const contextusing=React.createContext();
 
-  // const reducer=(state,action)=>{
-  // switch(action)
-  // {
-  //   case 'increment':
-  //     return state+1;
-  //   case 'decrement':
-  //     return state-1;
-  //   case 'reset':
-  //     return initialvalue;
-  //   default:
-  //     return state;
-  // }
-  // }
+  const reducer=(state,action)=>{
+  switch(action)
+  {
+    case 'increment':
+      return state+1;
+    case 'decrement':
+      return state-1;
+    case 'reset':
+      return initialvalue;
+    default:
+      return state;
+  }
+  }
 
 function App() {
  
-  // const [count,dispatch]=useReducer(reducer,initialvalue)
+  const [count,dispatch]=useReducer(reducer,initialvalue)
   return (
     <div className="App">
 
-      {/* <contextusing.Provider value={{globalcount:count , globaldispatch:dispatch}}>
+      <contextusing.Provider value={{globalcount:count , globaldispatch:dispatch}}>
        
        <h3>{count}</h3>
 
@@ -80,52 +86,52 @@ function App() {
       <CompB_useReducer_useContext_sharecounterValueInAllComp/>
       <CompC_useReducer_useContext_sharecounterValueInAllComp/>
 
-      </contextusing.Provider> */}
+      </contextusing.Provider>
 
 {/* //////////////////////////////////////this is for only usereducer along with usecontext//////////////// */}
 
 
-  {/* <Flexbox/> */}
-    {/* <Mediaquery/> */}
-       {/* <Make_mul_comp_Pass_data_through_props/> */}
-      {/* <Call_API_using_useReducer_and_useEffect/> */}
-      {/* <CounterwithUseReducer/> */}
-      {/* <Reducer/> */}
-      {/* <Fetchdatawithuseeffect/> */}
-      {/* <Automatictimer/> */}
-      {/* <UsestateHook/> */}
-        {/* <Mousemovercode/> */}
-        {/* <Removeacomp/> */}
-      {/* <Postrequest/> */}
-      {/* <Getrequest/> */}
-{/* 
+  <Flexbox/>
+    <Mediaquery/>
+       <Make_mul_comp_Pass_data_through_props/>
+      <Call_API_using_useReducer_and_useEffect/>
+      <CounterwithUseReducer/>
+      <Reducer/>
+      <Fetchdatawithuseeffect/>
+      <Automatictimer/>
+      <UsestateHook/>
+        <Mousemovercode/>
+        <Removeacomp/>
+      <Postrequest/>
+      <Getrequest/>
+
 <Provider value='Asra Furqan I am come directly through value of Context'>
   <ContextA/>
-</Provider> */}
+</Provider>
 
-    {/* <h1>Hello world</h1> */}
-    {/* Props are immutable */}
-    {/* <Funcmp propname='Asra'>
+    <h1>Hello world</h1>
+    Props are immutable
+    <Funcmp propname='Asra'>
       <p>children 1</p>
       <p>children 2</p>
-    </Funcmp> */}
-    {/* <Funcmp propname='Furqan'/> */}
-    {/* <Classcmp propname='Sadia'/> */}
-    {/* <JSX/> */}
-    {/* <Statehandling/> */}
-    {/* <Counter/> */}
-    {/* <Parent/> */}
-    {/* <Conditionalrendering/> */}
-    {/* <Mapfunction/> */}
-    {/* <Styling condiononapplycss={true}/> */}
-    {/* <Form/> */}
-    {/* <Mountinglifecycle/> */}
-    {/* <Fragments/> */}
-    {/* <Ref/> */}
-    {/* <Refchild/> */}
-    {/* <Refparent/> */}
+    </Funcmp>
+    <Funcmp propname='Furqan'/>
+    <Classcmp propname='Sadia'/>
+    <JSX/>
+    <Statehandling/>
+    <Counter/>
+    <Parent/>
+    <Conditionalrendering/>
+    <Mapfunction/>
+    <Styling condiononapplycss={true}/>
+    <Form/>
+    <Mountinglifecycle/>
+    <Fragments/>
+    <Ref/>
+    <Refchild/>
+    <Refparent/>
 
-    {/* <Errorhandling>
+    <Errorhandling>
     <Errorboundary heroname='batman'/>
     </Errorhandling>
 
@@ -136,19 +142,21 @@ function App() {
     <Errorhandling>
     <Errorboundary heroname='joker'/>
     </Errorhandling>
-    */}
+   
     
-    {/* <ClickcounterHOC remainingprops={(isLogged)=>'use spread operator in HOC to pass remianing props'}/> */}
-    {/* <HovercounterHOC remainingprops={(isLogged)=>isLogged?'use spread operator in HOC to pass remianing props':'No'}/> */}
-
+    <ClickcounterHOC remainingprops={(isLogged)=>'use spread operator in HOC to pass remianing props'}/>
+    <HovercounterHOC remainingprops={(isLogged)=>isLogged?'use spread operator in HOC to pass remianing props':'No'}/>
+    <Using_Usestate_in_all_ways/>
+    <Done_OR_NotDone_in_listing/>
+    <Dynamically_insertion_value_in_object_in_usestate/>
+    <Insert_Show_Search_movie_details/>
+    <Mouse_focused/>
 
     {/* <Renderprops>
       {(count,counter)=>{<ClickcounterRenderprops count={count} counter={counter}/>}}
     </Renderprops>
     <Renderprops render={(count,counter)=>{<HovercounterRenderprops count={count} counter={counter}/>}}/> */}
     
-
-
     </div>
   );
 }
